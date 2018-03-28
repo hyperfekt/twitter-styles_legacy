@@ -1,0 +1,1727 @@
+/* ==UserStyle==
+@name Twitter Desaturated
+@version 2.0.0
+@description Desaturates the Twitter Night Mode, entirely removing the blue tint from the site.
+@author hyperfekt
+@namespace net.hyperfekt
+@homepageURL https://github.com/hyperfekt/twitter-styles/
+@supportURL https://github.com/hyperfekt/twitter-styles/issues/
+@updateURL https://raw.githubusercontent.com/hyperfekt/twitter-styles/master/twitter_desaturated.user.css
+@copyright hyperfekt
+@license Network Extended License (https://github.com/hyperfekt/twitter-styles/blob/master/LICENSE.md)
+==/UserStyle== */
+
+@-moz-document regexp("https?://twitter\.com/(?!(intent/|i/tfb/v1/quick_promote/)).*") {
+  body {
+    background-color: #1D1D1D !important;
+  }
+  :not(.flex-module-header) > h3:not(.AdaptiveSearchPage-moduleTitle):not(.modal-title):not(.MomentsPermalinkPage-relatedTitle):not(.HomeEmptyTimeline-header) {
+    color: #979797 !important;
+  }
+  /* header */
+  .global-nav-inner {
+    background: #363636 !important;
+  }
+  .bird-topbar-etched {
+    color: #878787 !important;
+  }
+  .btn.active, .btn:active, .dropdown.open .user-dropdown, .btn.open, .open > .btn {
+    background-color: #1D1D1D !important;
+  }
+  /* search bar */
+  .global-nav .search-input:not(:focus) {
+    background-color: #242424 !important;
+    border-color: #1D1D1D !important;
+  }
+  .global-nav .search-input:focus,
+  .global-nav .search-input.focus {
+    background-color: #292929 !important;
+  }
+  .global-nav .search-input::placeholder,
+  input::placeholder,
+  textarea::placeholder,
+  .global-nav .search-icon .Icon {
+    color: #979797 !important;
+  }
+
+  /* saved searches */
+  .dropdown-menu {
+    background-color: #363636 !important;
+  }
+  .dropdown-caret .caret-inner {
+    border-bottom-color: #292929 !important;
+  }
+  .typeahead-recent-search-item .Icon--close,
+  .typeahead-saved-search-item .Icon--close {
+    color: #525252 !important;
+  }
+
+  /* search results */
+  .typeahead-topics:not(:hover):not(:focus) strong {
+    color: #979797 !important;
+  }
+  .typeahead-accounts .typeahead-social-context {
+    color: #979797 !important;
+  }
+  :not(.open) > .SearchExtrasDropdown-toggle:not(:hover):not(:focus) {
+    color: #979797 !important;
+  }
+  .AdaptiveNewsLargeImageHeadline-description {
+    color: #979797 !important;
+  }
+  .AdaptiveNewsHeadlineDetails-date, .AdaptiveNewsHeadlineDetails-date:focus, .AdaptiveNewsHeadlineDetails-date:hover, .AdaptiveNewsHeadlineDetails-domain, .AdaptiveNewsHeadlineDetails-domain:focus, .AdaptiveNewsHeadlineDetails-domain:hover {
+    color: #979797 !important;
+  }
+  .AdaptiveNewsLargeImageHeadline-image {
+    background-color: #292929 !important;
+  }
+  .AdaptiveNewsLargeImageHeadline-body {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .tweet .context a {
+    color: #979797 !important;
+  }
+
+  /* links */
+  .account-group .username,
+  .time,
+  .time a:not(:hover):not(:focus),
+  .created-via {
+    color: #979797 !important;
+  }
+  /* restores the original value */
+  .tweet.Tweet--invertedColors .account-group .username {
+    color: #fff !important;
+  }
+  a.account-group:hover .username,
+  a.account-group:focus .username,
+  a.account-summary:focus .username {
+    color: #979797 !important;
+  }
+  .tweet .context .pretty-link s,
+  .tweet .context .pretty-link:not(:hover):not(:focus) b {
+    color: #979797 !important;
+  }
+  .nav>li {
+    color: #979797 !important;
+  }
+  .btn-link.translate-button:not(:hover):not(:focus) {
+    color: #979797 !important;
+  }
+  .btn-link.translate-button .Icon--translator {
+    color: #979797 !important;
+  }
+  .ProfileCardStats-statLabel:not(:hover):not(:focus) {
+    color: #979797 !important;
+  }
+  .DashUserDropdown.dropdown-menu .DashUserDropdown-userInfoLink .name,
+  .DashUserDropdown.dropdown-menu .DashUserDropdown-userInfoLink:hover .name,
+  .DashUserDropdown.dropdown-menu .DashUserDropdown-userInfoLink:focus .name,
+  .DashUserDropdown.dropdown-menu .DashUserDropdown-userInfoLink:active .name {
+    color: #979797 !important;
+  }
+  .DashUserDropdown.dropdown-menu .DashUserDropdown-userInfoLink:hover,
+  .DashUserDropdown.dropdown-menu .DashUserDropdown-userInfoLink:focus,
+  .DashUserDropdown.dropdown-menu .DashUserDropdown-userInfoLink:active {
+    background-color: #363636 !important;
+  }
+  .DashUserDropdown.dropdown-menu li:not(:hover):not(:focus) .Icon {
+    color: #979797 !important;
+  }
+  /* text */
+  .Trends .context-trend-item .trend-item-stats {
+    color: #979797 !important;
+  }
+  .Icon--promoted {
+    color: #979797 !important;
+  }
+  .metadata,
+  .metadata button.btn-link,
+  .metadata a:not(:hover):not(:focus) {
+    color: #979797 !important;
+  }
+  .UserSmallListItem-contextIcon .Icon--follower {
+    color: #979797 !important;
+  }
+  /* widgets */
+  .Trends,
+  .DashboardProfileCard {
+    background-color: #292929 !important;
+  }
+  .module:not(.Footer--blankBackground) .flex-module {
+    background-color: #292929 !important;
+  }
+  .account-summary .dismiss {
+    color: #525252 !important;
+  }
+  .Footer-item,
+  .Footer-link:not(:hover):not(:focus) {
+    color: #979797 !important;
+  }
+  .stream-end-inner {
+    background-color: #292929 !important;
+  }
+  .permalink .stream-end .Icon--logo {
+    color: #525252 !important;
+  }
+  .spinner,
+  .pushing-state .pushstate-spinner,
+  .FoundMediaSearch-dropdownMenu .FoundMediaSearch-pagination,
+  .PermalinkOverlay-spinner, .DMSpinner, .spinner-small.spinner-dark-bg, .spinner-small, .spinner-bigger, .image-upload-spinner, .embed-code-container .embed-overlay-spinner .embed-overlay-content, .BouncerSpinner-image, .Spinner, .FoundMediaSearch-query input[type="text"].FoundMediaSearch-queryInput--loading, .ComposerThumbnail-loading, .ThreadedConversation-showMoreSpinner, .ThreadedConversation-moreRepliesSpinner {
+    filter: grayscale(1) !important;
+  }
+  /* the tweet box mixes in the theme color over the background blue, but since we don't have access to the theme color by itself, we'll desaturate it as well */
+  .home-tweet-box,
+  .LiveVideo-tweetBox,
+  .RetweetDialog-commentBox {
+    background-color: #333333 !important;
+  }
+  .new-tweets-bar {
+    background-color: #242424 !important;
+  }
+  .new-tweets-bar:hover {
+    background-color: #1D1D1D !important;
+    border-color: #525252 !important;
+  }
+  /* tweet box */
+    :not(.search-404) > input,
+    textarea,
+    div[contenteditable],
+    .t1-select {
+      background-color: #1D1D1D !important;
+    }
+  .EmojiPicker-trigger {
+    color: #B5B5B5 !important;
+  }
+  .CountdownCounter.tweet-counter {
+    color: #979797 !important;
+  }
+  .RadialCounter--safe {
+    stroke: white !important;
+  }
+  .tweet-form div.rich-editor.is-showPlaceholder::before,
+  .tweet-form div.rich-editor:empty::before {
+    color: #B5B5B5 !important;
+  }
+  .EdgeButton--secondary,
+  .EdgeButton--secondary.disabled,
+  .EdgeButton--secondary[disabled],
+  .EdgeButton--secondary[disabled]:hover,
+  .EdgeButton--secondary[aria-disabled="true"] {
+    background-color: #292929 !important;
+  }
+  .EdgeButton--secondary:hover,
+  .EdgeButton--secondary:active {
+    background-color: #333333 !important;
+  }
+  .PollingCardComposer {
+    background-color: #242424 !important;
+    box-shadow: inset 0 1px 0 #525252 !important;
+  }
+  .PollingCardComposer .PollingCardComposer-pollDuration {
+    border-top-color: #525252 !important;
+  }
+  .PollingCardComposer .PollingCardComposer-optionInput.is-showPlaceholder::before {
+    color: #B5B5B5 !important;
+  }
+  .PollingCardComposer .PollingCardComposer-customDuration,
+  .PollingCardComposer[data-custom-duration="true"] .PollingCardComposer-defaultDuration {
+    color: #979797 !important;
+  }
+  .PollingCardComposer .PollingCardComposer-pollDuration {
+    color: #B5B5B5 !important;
+  }
+  .PollingCardComposer .PollingCardComposer-removeOption {
+    color: #525252 !important;
+  }
+  .inline-geo-picker .Icon--geo {
+    color: #979797 !important;
+  }
+  .inline-geo-picker .geo-status {
+    color: #979797 !important;
+  }
+  .geo-query-location {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .geo-query-location .Icon--search {
+    color: #979797 !important;
+  }
+  .FoundMediaSearch-query {
+    background-color: #242424 !important;
+  }
+  .FoundMediaSearch-query .Icon--search {
+    color: #979797 !important;
+  }
+  .TweetBoxUploadProgress {
+    color: #979797 !important;
+  }
+  .ComposerThumbnail-overlay {
+    color: #171717 !important;
+  }
+  .ComposerThumbnail-description {
+    color: #171717 !important;
+  }
+  .Icon--playButton {
+    color: #878787 !important;
+  }
+  /* photo tagging */
+  .user-select-controls {
+    border-color: #1D1D1D !important;
+    background-color: #1D1D1D !important; /* altered from whatever the hell weird thing the default was */
+  }
+
+  .DashboardProfileCard-avatarLink {
+    background-color: #292929 !important;
+  }
+  .DashboardProfileCard-avatarImage {
+    border-color: #292929 !important;
+  }
+  .stream-item:not(.no-header-background-module) {
+    background-color: #292929 !important;
+  }
+  :not(.modal-tweet):not(.ProfilePrefilledTweet) > .tweet:hover:not(.modal-tweet) {
+    background-color: #1D1D1D !important;
+  }
+  .tweet > .context .with-icn .Icon:not(.u-textUserColor),
+  .with-icn,
+  .tweet:not(.Tweet--invertedColors) .ProfileTweet-action:not(:hover):not(:focus) .ProfileTweet-actionButton:not(.ProfileTweet-actionButtonUndo):not(.is-disabled),
+  .tweet:not(.Tweet--invertedColors) .ProfileTweet-action:not(:hover):not(:focus) .ProfileTweet-actionButton:not(.ProfileTweet-actionButtonUndo) .ProfileTweet-actionCount {
+    color: #979797 !important;
+  }
+  .tweet:not(.Tweet--invertedColors) .ProfileTweet-action.ProfileTweet-action--dm .ProfileTweet-actionButton:not(:hover):not(:focus),
+  .tweet:not(.Tweet--invertedColors) .ProfileTweet-action.ProfileTweet-action--analytics .ProfileTweet-actionButton:not(:hover):not(:focus) {
+    color: #979797 !important;
+  }
+  /* change favorite icon */
+  .HeartAnimation {
+    background-image: url(https://user-images.githubusercontent.com/9434715/38002891-1af186d0-3235-11e8-93fe-2da39b225206.png);
+  }
+  .ProfileTweet-action--favorite.is-hoverStateCancelled:hover .ProfileTweet-actionButton, .ProfileTweet-action--favorite.is-hoverStateCancelled:hover .ProfileTweet-actionCount, .ProfileTweet-action--favorite.is-hoverStateCancelled .ProfileTweet-actionButton:focus, .ProfileTweet-action--favorite.is-hoverStateCancelled .ProfileTweet-actionButton:focus .ProfileTweet-actionCount {
+    color: #B6B6B6 !important;
+  }
+  .ProfileTweet-action--retweet .ProfileTweet-actionButton.is-disabled, .ProfileTweet-action--retweet .ProfileTweet-actionButton.is-disabled .ProfileTweet-actionCount, .ProfileTweet-action--retweet:hover .ProfileTweet-actionButton.is-disabled, .ProfileTweet-action--retweet .ProfileTweet-actionButton.is-disabled:focus, .ProfileTweet-action--retweet:hover .ProfileTweet-actionButton.is-disabled .ProfileTweet-actionCount, .ProfileTweet-action--retweet .ProfileTweet-actionButton.is-disabled:focus .ProfileTweet-actionCount {
+      color: #1D1D1D !important;
+    }
+  .dropdown-menu li > a:not(:hover):not(:focus):not(.SearchExtrasDropdown-target):not(.u-textUserColor),
+  .dropdown-menu .dropdown-link:not(:hover):not(:focus):not(.SearchExtrasDropdown-target):not(.u-textUserColor) {
+    color: #979797 !important;
+  }
+  .media-tagging-block a:not(:hover):not(:focus) {
+    color: #979797 !important;
+  }
+  /* profile hover */
+  .hovercard {
+    background-color: #292929 !important;
+  }
+  .hovercard .arrow:not([style*='background-color']) {
+    background-color: #292929 !important;
+  }
+  .hovercard .profile-social-proof {
+    background-color: #292929 !important;
+  }
+  .hovercard.profile-card .profile-card-listName {
+    color: #979797 !important;
+  }
+  .ProfileCard .ProfileCard-screennameLink,
+  .ProfileCard .ProfileCard-screennameLink:hover,
+  .ProfileCard .ProfileCard-screennameLink:focus {
+    color: #979797 !important;
+  }
+  .hovercard.gravity-south:not(.with-banner) .arrow {
+    background-color: #292929 !important;
+  }
+  /* tweet popups */
+  .PermalinkOverlay-spinnerContainer {
+    background-color: #292929 !important;
+  }
+  .permalink {
+    background-color: #242424 !important;
+  }
+  .permalink-tweet,
+  .permalink-tweet:hover {
+    background-color: #292929 !important;
+  }
+  .permalink-tweet:hover,
+  .permalink-tweet.focus {
+    background-color: #292929 !important;
+  }
+  .stats a:not(:hover):not(:focus) {
+    color: #979797 !important;
+  }
+  .permalink .inline-reply-tweetbox-container {
+    background-color: #292929 !important;
+  }
+  .permalink .inline-reply-tweetbox {
+    background-color: #242424 !important;
+  }
+  .self-thread-permalink-cta {
+    background-color: #292929 !important;
+  }
+  .QuoteTweet {
+    border-color: #1D1D1D !important;
+  }
+  .QuoteTweet:hover,
+  .QuoteTweet:active {
+    border-color: #B5B5B5 !important;
+  }
+  .ReplyingToContextBelowAuthor {
+    color: #979797 !important;
+  }
+  .self-thread-context {
+    color: #979797 !important;
+  }
+  .TwitterCard[data-theme="night-mode"] .SummaryCard-destination {
+    color: #979797 !important;
+  }
+  /* DM dock */
+  .DMActivity-header {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .DMUpdateAvatar-avatar:empty {
+    background-color: #1D1D1D !important;
+  }
+  .DMPopover-content {
+    background-color: #292929 !important;
+  }
+  .DMActivity-body {
+    background-color: #292929 !important;
+  }
+  .DMButtonBar {
+    background-color: #242424 !important;
+  }
+  .DMTokenizedMultiselectSuggestion.is-highlighted {
+    background-color: #242424 !important;
+    border-color: #1D1D1D !important;
+  }
+  .TokenizedMultiselect-inputContainer {
+    border-color: #CCCCCC !important;
+  }
+  .InputToken {
+    background-color: #878787 !important;
+  }
+  .InputToken:focus {
+    background-color: #292929 !important;
+    border-color: #878787 !important;
+    color: #878787 !important;
+  }
+  .DMTokenizedMultiselectSuggestion-selectedIndicator,
+  .DMTokenizedMultiselectSuggestion-preselectedIndicator {
+    color: #878787 !important;
+  }
+  .DirectMessage-footer {
+    color: #979797 !important;
+  }
+  .DirectMessage--received .DirectMessage-text {
+    background-color: #1D1D1D !important;
+  }
+  .DirectMessage--sent .DirectMessage-text {
+    background-color: #878787 !important;
+  }
+  .DMUpdateName.is-richHeader .DMUpdateName-screenName {
+    color: #979797 !important;
+  }
+  .DMTrustRequest-message {
+    color: #979797 !important;
+  }
+  .DMTrustRequest {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .DirectMessage-location, .DirectMessage-card {
+    background-color: #292929 !important;
+  }
+  .DMConversation-composer {
+    border-color: #1D1D1D !important;
+  }
+  .DMConversationSettings-notifications {
+    border-color: #1D1D1D !important;
+  }
+  html .ResponsiveLayout--Night {
+    background-color: #292929 !important;
+  }
+  
+  /* reduce theme color */
+  .u-bgUserColorLightest {
+    background-color: #333333 !important;
+  }
+  .DMComposer-attachment {
+    border-color: #525252 !important;
+  }
+  .DMComposer-container {
+    background-color: #292929 !important;
+  }
+  .modal .modal-tweet {
+    background-color: #292929 !important;
+  }
+  .DMComposer-discardTweet {
+    background-color: #979797 !important;
+  }
+  .DirectMessage-actions {
+    color: #979797 !important;
+  }
+  .DirectMessage--sent .DirectMessage-message.with-tweet .DirectMessage-attachmentContainer {
+    border-color: #878787 !important;
+  }
+  .DMReadReceipt-check.is-seen {
+    color: #878787 !important;
+  }
+  .DMActivity-header {
+    color: #979797 !important;
+  }
+  .DMInbox-tab {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .DMInboxItem:hover {
+    background-color: #242424 !important;
+  }
+  .DMInboxItem {
+    border-color: #1D1D1D !important;
+  }
+  .DMInboxItem-snippet {
+    color: #979797 !important;
+  }
+  .DMInboxItem-timestamp {
+    color: #979797 !important;
+  }
+  .DMInboxItem.is-unread {
+    background-color: #424242 !important;
+  }
+  .DMInbox-secondaryInboxCopy {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+    color: #979797 !important;
+  }
+  .DMInboxItem-muted {
+    color: #B5B5B5 !important;
+  }
+  .DMPopoverMenu {
+    color: #979797 !important;
+  }
+  .DMInboxItem-actionMenu {
+    color: #B6B6B6 !important;
+  }
+
+  .DMQuickReply-optionText {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .DMQuickReply-optionText:hover {
+    background-color: #242424 !important;
+  }
+  .DMQuickReply-optionDescription {
+    color: #979797 !important;
+  }
+  .DMQuickReply.is-selected .DMQuickReply-optionText.is-selected, .DMQuickReply.is-selected .DMQuickReply-optionText.is-selected:hover, .DMQuickReply.is-selected .DMQuickReply-optionText.is-selected .DMQuickReply-optionDescription, .DMQuickReply.is-selected .DMQuickReply-optionText.is-selected .DMQuickReply-optionDescription:hover {
+    background-color: #444444 !important;
+  }
+  .DMQuickReply.is-selected .DMQuickReply-optionText, .DMQuickReply.is-selected .DMQuickReply-optionDescription, .DMQuickReply.is-selected .DMQuickReply-optionText:hover, .DMQuickReply.is-selected .DMQuickReply-optionDescription:hover {
+    background-color: #292929 !important;
+    color: #525252 !important;
+  }
+
+
+  .DMNotice {
+    background-color: #444444 !important;
+  }
+  .DMDivider {
+    background-color: #292929 !important;
+  }
+  .DMDivider::before {
+    border-color: #1D1D1D !important;
+  }
+  .DMLastReadMarker {
+    color: #B6B6B6 !important;
+  }
+
+  .TypingIndicatorMessageBubble-dotContainer {
+    background: #1D1D1D !important;
+  }
+  .TypingIndicatorMessageBubble.Caret::before {
+    border-left-color: #1D1D1D !important;
+  }
+  .TypingIndicatorMessageBubble-dot::after {
+    background-color: #B6B6B6 !important;
+  }
+  /* changed luminance */
+  @keyframes TypingIndicatorMessageBubble-blink {
+    0%   {
+      opacity: .5;
+      transform: translate(-50%,-50%) scale(0.666);
+      background: #CCCCCC !important;
+    }
+    25%  {
+      opacity: 1;
+      transform: translate(-50%,-50%) scale(1);
+      background-color: #CCCCCC !important;
+    }
+    50%  {
+      opacity: .5;
+      transform: translate(-50%,-50%) scale(0.666);
+      background-color: #CCCCCC !important;
+    }
+    75%  {
+      opacity: .5;
+      transform: translate(-50%,-50%) scale(0.666);
+      background-color: #CCCCCC !important;
+    }
+    100% {
+      opacity: .5;
+      background-color: #CCCCCC !important;
+      transform: translate(-50%,-50%) scale(0.666);
+    }
+  }
+
+  /* notifications */
+  .content-header,
+  .content-no-header {
+    background-color: #1D1D1D !important;
+  }
+  .NotificationsHeadingContent {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .ActivityItem:not(.has-clickAction) .QuoteTweet--slim:hover {
+    background-color: #242424 !important;
+  }
+  .ActivityItem-activityTimestamp {
+    color: #979797 !important;
+  }
+  .ActivityItem-dismissMenu {
+    color: #979797 !important;
+  }
+  .ActivityItem.has-clickAction:hover {
+    background-color: #242424 !important;
+  }
+  li.stream-item.highlighted {
+    background-color: #444444 !important;
+  }
+
+  
+  /* tweet box popup */
+  .modal-content {
+    background-color: #292929 !important;
+  }
+  .modal-header {
+    background-color: #292929 !important;
+  }
+  .modal-footer {
+    border-color: #1D1D1D !important;
+  }
+  .modal-close:not(.modal-close-fixed) .Icon--close {
+    color: #979797 !important;
+  }
+  /* reduce theme color */
+  #global-tweet-dialog .modal-tweet-form-container,
+  #Tweetstorm-dialog .modal-body {
+    background: none !important;
+  }
+  .TweetstormDialog .EdgeButton.js-delete-tweet {
+    color: #979797 !important;
+  }
+  .EdgeButton--tertiary {
+    background-color: #292929 !important;
+    border-color: #979797 !important;
+    color: #979797 !important;
+  }
+  .EdgeButton--tertiary:hover {
+    background-color: #242424 !important;
+  }
+  .EdgeButton--tertiary:focus {
+    box-shadow: 0 0 0 2px #292929, 0 0 0 4px #525252 !important;
+  }
+  .EdgeButton--tertiary:active {
+    box-shadow: 0 0 0 2px #292929,0 0 0 4px #979797 !important;
+  }
+  /* profile pages */
+  .ProfileCanopy-navBar {
+    background-color: #292929 !important;
+  }
+  .ProfileNav-item:not(.is-active) .ProfileNav-stat:not(:hover):not(:focus) .ProfileNav-value {
+    color: #979797 !important;
+  }
+  .ProfileNav-item.is-active .ProfileNav-value,
+  .ProfileNav-item.is-active:hover .ProfileNav-value {
+    color: inherit !important;
+  }
+  .ProfileNav-label {
+    color: #979797 !important;
+  }
+  .ProfileNav-item--userActions {
+    background-color: #292929 !important;
+  }
+  .ProfileNav-dropdownCaret {
+    color: #979797 !important;
+  }
+  .ProfileAvatar {
+    background-color: #292929 !important;
+    border-color: #292929 !important;
+  }
+  .ProfilePage.is-editing .ProfilePage-editingOverlay {
+    background-color: #292929 !important;
+  }
+  .ProfileAvatarEditing {
+    background-color: #292929 !important;
+  }
+  .ProfileHeaderCardEditing-item:not(.ProfileHeaderCardEditing-name) .ProfileHeaderCardEditing-editableField, .ProfileHeaderCardEditing-item .ProfileHeaderCardEditing-editableField:focus, .ProfileHeaderCardEditing-item .ProfileHeaderCardEditing-editableField.fake-focus, .ProfileHeaderCardEditing-item .ProfileHeaderCardEditing-measuringField {
+    color: #979797 !important;
+  }
+  .ProfilePage .ProfileHeaderCardEditing-editableField.is-showPlaceholder::before {
+    color: #979797 !important;
+  }
+  .RichEditor {
+    background-color: #1D1D1D !important;
+  }
+  .BirthdateSelect-label {
+    color: #979797 !important;
+  }
+  .BirthdateSelect-button {
+    background-color: #292929 !important;
+  }
+  .BirthdateSelect-button.is-notSet {
+    color: #979797 !important;
+  }
+  .VisibilitySettings-dropdownIcon, .VisibilitySettings-dropdownCaret, .VisibilitySettings-optionIcon {
+    color: #979797 !important;
+  }
+  .ProfileHeading-content {
+    background-color: #292929 !important;
+  }
+  .ProfileHeaderCard-screennameLink,
+  .ProfileHeaderCard-screennameLink:hover {
+    color: #979797 !important;
+  }
+  .ProfileHeaderCard-birthdateText,
+  .ProfileHeaderCard-joinDateText,
+  .ProfileHeaderCard-locationText,
+  .ProfileHeaderCard-onlineHoursText,
+  .ProfileHeaderCard-responsivenessLevelText,
+  .ProfileHeaderCard-urlText,
+  .ProfileHeaderCard-vineProfileText,
+  .ProfileHeaderCard-periscopeProfileText {
+    color: #979797 !important;
+  }
+  .ProfileHeaderCard-birthdate,
+  .ProfileHeaderCard-joinDate,
+  .ProfileHeaderCard-location,
+  .ProfileHeaderCard-onlineHours,
+  .ProfileHeaderCard-responsivenessLevel,
+  .ProfileHeaderCard-url,
+  .ProfileHeaderCard-vineProfile,
+  .ProfileHeaderCard-periscopeProfile {
+    color: #979797 !important;
+  }
+  .ProfileUserList-heading {
+    color: #979797 !important;
+  }
+  .PhotoRail-heading {
+    color: #979797 !important;
+  }
+  .PhotoRail-mediaBox .tweet-media-img-placeholder {
+    background-color: #979797 !important;
+  }
+  .ProfileSidebar .TweetImpressionsModule,
+  .ProfileSidebar .ProfileLifelineInfo,
+  .ProfileSidebar .RelatedUsers {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .TweetImpressionsModule-organic {
+    background-color: #878787 !important;
+  }
+  .TweetImpressionsModule-barchart-colorfill.organic {
+    background-color: #878787 !important;
+  }
+  .TweetImpressionsModule-xAxis {
+    background-color: #525252 !important;
+  }
+  .ProfileWarningTimeline-explanation {
+    color: #979797 !important;
+  }
+  .ProfilePage-emptyModuleBody {
+    color: #979797 !important;
+  }
+  .Icon--unmuted {
+    color: #525252 !important;
+  }
+  .ProtectedTimeline-heading {
+    color: #979797 !important;
+  }
+  .ProtectedTimeline-explanation {
+    color: #979797 !important;
+  }
+
+
+  /* follows */
+  .ProfileCard {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .UserActions .user-dropdown-icon {
+    color: #979797 !important;
+  }
+  .ProfileCard-avatarLink {
+    background-color: #292929 !important;
+  }
+  .FollowStatus {
+    background-color: #1D1D1D !important;
+    color: #979797 !important;
+  }
+
+  /* lists */
+  .ListCreationModule {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .ListCreationModule-description {
+    color: #979797 !important;
+  }
+  .ProfileListItem {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .ProfileListItem-memberCount {
+    color: #979797 !important;
+  }
+  .ProfileListItem-byLine {
+    color: #979797 !important;
+  }
+  .ProfileListItem-ownerName:not(:hover):not(:focus) {
+    color: #979797 !important;
+  }
+
+  .flex-module-header p {
+    color: #979797 !important;
+  }
+  .follow-card {
+    background-color: #292929 !important;
+  }
+  .dashboard .stats {
+    background-color: #292929 !important;
+  }
+  .follow-card .follow-bar {
+    border-color: #1D1D1D !important;
+  }
+
+
+  /* moments */
+  .ProfileUserMomentsTimeline .MomentCapsuleSummary {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .MomentCapsuleSummary-cover {
+    background-color: #525252 !important;
+  }
+  .MomentSummaryActionsMenu {
+    color: #B5B5B5 !important;
+  }
+  .MomentCapsuleSubtitle {
+    color: #979797 !important;
+  }
+  .MomentCapsuleSummary-description {
+    color: #979797 !important;
+  }
+  .MomentCapsuleSummary .MomentCapsuleLikesCount {
+    color: #979797 !important;
+  }
+  .MomentCapsuleSummary .MomentCapsuleRetweetsCount {
+    color: #979797 !important;
+  }
+  .MomentDialog-header,
+  .MomentDialog-footer {
+    background-color: #242424 !important;
+  }
+  .MomentDialog-text {
+    color: #979797 !important;
+  }
+  .MomentSummaryActionsMenu .dropdown-menu .dropdown-link[disabled], .MomentSummaryActionsMenu .dropdown-menu .dropdown-link[disabled]:hover {
+    background-color: #292929 !important;
+    color: #B6B6B6 !important;
+  }
+
+  .MomentsPage.MomentsPermalinkPage, .MomentsPage.MomentsGuidePage {
+    background-color: #292929 !important;
+  }
+  .MomentCapsuleCover-description {
+    color: #979797 !important;
+  }
+  :not(.open) > .MomentDropdownMenu-button:not(:hover):not(:focus) {
+    color: #979797 !important;
+  }
+  .MomentCapsuleCoverAttribution, .MomentCapsuleCoverAttribution:active, .MomentCapsuleCoverAttribution:focus, .MomentCapsuleCoverAttribution:hover {
+    color: #B6B6B6 !important;
+  }
+  .MomentCapsuleCover-media {
+    border-color: #B6B6B6 !important;
+  }
+  .MomentCapsuleLikesFacepile-count {
+    color: #979797 !important;
+  }
+  .MomentTweetActions-item:not(.Tweet--invertedColors) .ProfileTweet-actionButton:not(:hover):not(:focus):not(.ProfileTweet-actionButtonUndo),
+  .MomentTweetActions-item:not(.Tweet--invertedColors) .ProfileTweet-actionButton:not(:hover):not(:focus):not(.ProfileTweet-actionButtonUndo) .ProfileTweet-actionCount {
+    color: #979797 !important;
+  }
+  .MomentCapsuleItemTweet-byline, .MomentCapsuleItemTweet-date a, .MomentCapsuleItemTweet-date a:hover {
+    color: #979797 !important;
+  }
+  .MomentCapsuleItemTweet--withText {
+    background-color: #242424 !important;
+  }
+  .MomentCapsuleSummary--hero:hover, .MomentCapsuleSummary--portrait:hover {
+    background-color: #242424 !important;
+  }
+  .MomentsPermalinkPage-related {
+    border-color: #1D1D1D !important;
+  }
+  .MomentFloatingMenu {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .MomentButton--gray, .MomentButton--gray:focus {
+    color: #979797 !important;
+  }
+  .MomentMediaItem {
+    background-color: #1D1D1D !important;
+  }
+  .MomentFormatLink-anchor:active, .MomentFormatLink-anchor:focus, .MomentFormatLink-anchor:hover {
+    background-color: #242424 !important;
+    border-color: #B6B6B6 !important;
+  }
+  .MomentFormatLink-anchor {
+    border-color: #525252 !important;
+  }
+  .MomentFormatLink-url {
+    color: #979797 !important;
+  }
+  .MomentCapsuleSummary--hero:focus, .MomentCapsuleSummary--portrait:focus {
+    box-shadow: 0 0 0 2px rgba(90,90,90,0.5) !important;
+  }
+  .Gallery-media {
+    background-color: #1D1D1D;
+  }
+  .Gallery-content {
+    background-color: #1D1D1D;
+  }    
+  
+  /* other */
+
+  .message {
+    background-color: #292929 !important;
+  }
+  .message .close, .message .dismiss {
+    color: #979797 !important;
+  }
+  .activity-popup-dialog-content .tweet {
+    background-color: #292929 !important;
+  }
+  .recap-header .dropdown {
+    color: #979797 !important;
+  }
+  .ActivityItem {
+    border-color: #1D1D1D !important;
+  }
+  .ThreadedConversation, .ThreadedConversation--loneTweet {
+    background-color: #292929 !important;
+  }
+  .ThreadedConversation, .ThreadedConversation-moreReplies::after {
+    border-color: #1D1D1D !important;
+  }
+  #global-tweet-dialog .modal-tweet .tweet:hover,
+  #global-tweet-dialog .modal-tweet .tweet {
+    background-color: #292929 !important;
+  }
+
+  .Tombstone .Tombstone-action {
+    color: #979797 !important;
+  }
+
+  .ReplyingToContextBelowAuthor .btn-link:not(:hover):not(:focus) {
+    color: #979797 !important
+  }
+
+  .tweet-form .reply-users {
+    color: #979797 !important;
+  }
+
+  .activity-popup-dialog-other-reply-users {
+    color: #979797 !important;
+  }
+
+  #activity-popup-dialog.reply-users-popup .activity-popup-dialog-users .account,
+  #activity-popup-dialog.reply-users-popup .activity-popup-dialog-other-reply-users {
+    border-color: #525252 !important;
+  }
+
+  #activity-popup-dialog.reply-users-popup .modal-content, #activity-popup-dialog.reply-users-popup .activity-popup-dialog-in-reply-to-user .stream-item {
+    background-color: #242424 !important;
+  }
+  .activity-popup-dialog-users .account, .activity-popup-dialog-in-reply-to-user .account {
+    border-color: #1D1D1D !important;
+  }
+
+  .EmojiPicker-content.Caret::after {
+    border-color: #242424;
+  }
+  .EmojiPicker-categoryHeader {
+    background-color: #363636 !important;
+    border-color: #1D1D1D !important;
+  }
+  .EmojiPicker-query {
+    background-color: #242424 !important;
+    border-color: #1D1D1D !important;
+  }
+  .EmojiPicker-clearQuery {
+    color: #525252 !important;
+  }
+  .EmojiPicker-clearQuery:hover {
+    color: #B5B5B5 !important;
+  }
+  .EmojiPicker-categoryColumn {
+    border-color: #1D1D1D !important;
+  }
+  .EmojiPicker-diversityRow {
+    border-color: #1D1D1D !important;
+  }
+
+  .ResponsiveLayout--Night .PageContainer {
+    background-color: #292929 !important;
+  }
+  
+  .twitter-rules-link {
+    color: #A1A1A1 !important;
+  }
+  
+  .translation-attribution {
+    color: #979797 !important;
+  }
+
+  .embed-code-container .embed-tweet-description {
+    color: #979797 !important;
+  }
+  .embed-code-container textarea {
+    color: #979797 !important;
+    border-color: #525252 !important;
+  }
+  .message .message-text {
+    color: #979797 !important;
+  }
+
+  /* empty streams */
+  .HomeEmptyTimeline {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .HomeEmptyTimeline-body {
+    color: #979797 !important;
+  }
+  .ProfileEmptyTimeline-prefilledTweetsHeading {
+    color: #979797 !important;
+  }
+  .ProfileEmptyTimeline-tweetBoxHeading {
+    color: #979797 !important;
+  }
+  .ProfilePrefilledTweet .tweet {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .GridTimeline-emptyText {
+    color: #979797 !important;
+  }
+  .ProfileListsTimeline .GridTimeline-end:not(.has-items) {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .DMEmptyState-details {
+    color: #979797 !important;
+  }
+  .wtf-module .import-prompt .service {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .import-prompt p > span {
+    color: #979797 !important;
+  }
+  .wtf-module .import-prompt .cta {
+    border-color: #1D1D1D !important;
+  }
+  .flex-module-inner, .flex-module-footer {
+    color: #979797 !important;
+  }
+  .HomeEmptyTimeline {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .HomeEmptyTimeline-body {
+    color: #979797 !important;
+  }
+  .MutedKeywordsFooter-emptyMessage {
+    color: #979797 !important;
+  }
+
+  /* search */
+  .AdaptiveFiltersBar {
+    background-color: #292929 !important;
+  }
+  .AdaptiveFiltersBar-target:not(.u-textUserColor):not(:hover):not(:focus) {
+    color: #979797 !important;
+  }
+  .SidebarFilterModule {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .SearchExtrasDropdown-subtext {
+    color: #B6B6B6 !important;
+  }
+  .AdaptiveRelatedSearches {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .typeahead button.clear-recent-searches {
+    color: #7E7E7E !important;
+  }
+  .typeahead .dropdown-inner > .has-results ~ .has-results, .typeahead .dropdown-inner > .has-items ~ .has-items {
+    border-color: #1D1D1D !important;
+  }
+  .search {
+    background-color: #292929 !important;
+  }
+  .advanced-search legend {
+    color: #979797 !important;
+  }
+  .datepicker table tr td.old, .datepicker table tr td.new {
+    color: #979797 !important;
+  }
+  .datepicker table tr td.today, .datepicker table tr td.today:hover, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover {
+    background-color: #CCCCCC !important;
+    border-color: #999999 !important;
+  }
+  .SearchSettingsDialog .SearchSettings-description {
+    color: #979797 !important;
+  }
+  .SearchEmptyTimeline {
+    color: #979797 !important;
+  }
+  .muted {
+    color: #979797 !important;
+  }
+  .t1-infotext {
+    color: #979797 !important;
+  }
+  h2:not(.TwitterCard-title):not(.ProfileHeading-title):not(#content-main-heading):not(.DMActivity-title) {
+    color: #979797 !important;
+  }
+
+  /* settings */
+  .module .list-link {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .module .list-link:hover, .module .active .list-link {
+    background-color: #292929 !important;
+  }
+  .module li:not(.active) .list-link:not(:hover):not(:focus) {
+    color: #979797 !important;
+  }
+  .content-header, .content-no-header {
+    border-color: #1D1D1D !important;
+  }
+  .content-header .header-inner {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .content-inner {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .content-header .subheader {
+    color: #979797 !important;
+  }
+  .sms-form #device-country-carrier {
+    color: #979797 !important;
+  }
+  .settings-alert {
+    background-color: #878787 !important;
+  }
+  #notifications-optout-all-top {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .notifications-prompt-container {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .fine-print {
+    color: #979797 !important;
+  }
+  .find-friends-sources {
+    background-color: #292929 !important;
+  }
+  h4.find-friends-top-subheader, h4.find-friends-bottom-subheader {
+    color: #979797 !important;
+  }
+  .find-friends-top-subheader, .find-friends-bottom-subheader {
+    background-color: #292929 !important;
+  }
+  .find-friends-list li {
+    border-color: #1D1D1D !important;
+  }
+  .find-friends-list li:hover {
+    background-color: #1D1D1D !important;
+  }
+  .MutedKeywordsFooter {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .app .description {
+    color: #979797 !important;
+  }
+  .app .creator, .app .creator a {
+    color: #979797 !important;
+  }
+  .facebook-metadata {
+    color: #979797 !important;
+  }
+  .MutedKeywordsAddItemForm {
+    color:#B6B6B6 !important;
+  }
+  .disabled, .disabled:hover, .disabled:focus, .disabled:active, input[disabled], .t1-select[disabled], textarea[disabled], input[readonly], .t1-select[readonly], textarea[readonly], div[contenteditable="false"], div[contenteditable="true"][readonly] {
+    border-color: #525252 !important;
+  }
+  .MutedKeywordsAddItemForm {
+    background-color: #292929 !important;
+  }
+  .t1-legend {
+    border-color: #1D1D1D !important;
+  }
+  .MutedKeyword-item {
+    border-color: #1D1D1D !important;
+  }
+  .input-prepend .add-on, .input-append .add-on {
+    background-color: #242424 !important;
+    border-color: #525252 !important;
+  }
+  .app-password .description {
+    color: #979797 !important;
+  }
+
+  /* gif selection*/
+  .FoundMediaSearch-content.Caret::after {
+    border-top-color: #242424 !important;
+  }
+  .FoundMediaSearch-focusable {
+    border-color: #242424 !important;
+  }
+  .tweet-form .thumbnail-container {
+    background-color: #242424 !important;
+    box-shadow: inset 0 1px 0 #525252 !important;
+  }
+  .tweet-form.has-attribution .attribution {
+    color: #979797 !important;
+  }
+  .ComposerThumbnail {
+    background-color: #525252 !important;
+    border-color: #1D1D1D !important;
+  }
+  
+  /* polls */
+  .TwitterCard .EdgeButton--secondary {
+    color: #878787 !important;
+    border-color: #878787 !important;
+  }
+  .TwitterCard .EdgeButton--secondary:focus {
+    color: #878787 !important;
+    box-shadow: 0 0 0 2px #fff,0 0 0 4px #B7B7B7 !important;
+  }
+  .TwitterCard .PollXChoice-footer {
+    color: #979797 !important;
+  }
+  .TwitterCard .PollXChoice-optionContainer .PollXChoice-choice--radio {
+    border-color: #979797 !important;
+  }
+
+  /* etc */
+  .WtfLargeCarouselStreamItem-header .dropdown {
+    color: #979797 !important
+  }
+
+  .MediaEditDialog .modal-body, .MediaEditDialog .modal-footer {
+    background-color: #292929 !important;
+  }
+
+  .sc-key {
+    color: #979797 !important;
+    background-color: #292929 !important;
+    border-color: #525252 !important;
+  }
+  .keyboard-shortcuts .modal-table .shortcut-label {
+    color: #979797 !important;
+  }
+  .content-searchbar {
+    background-color: #242424 !important;
+    border-color: #1D1D1D !important;
+  }
+
+  .wtf-module .UserSmallListItem {
+    border-color: #1D1D1D !important;
+  }
+  .account-summary .account-group-inner, .account-summary .pretty-link, .account-summary .account-action, .account-summary .location {
+    color: #979797 !important;
+  }
+
+  .dropdown-divider {
+    border-color: #1D1D1D !important;
+  }
+
+  .Tombstone {
+    color: #979797 !important;
+    background-color: #242424 !important;
+    border-color: #525252 !important;
+  }
+
+  .TwitterCard .PlayerCard--preview .PlayerCard-playButton {
+    filter: grayscale(1);
+  }
+  .PlayableMedia-player {
+    background-color: #525252 !important;
+  }
+  .PlayableMedia-reactWrapper div[data-testid="poster"] svg {
+    color: #878787 !important;
+  }
+  .PlayableMedia-container {
+    border-color: #1D1D1D !important;
+  }
+  .PlayableMedia-reactWrapper > div > div[style='background-color: rgb(204, 215, 221); height: 100%; width: 100%; font-family: "helvetica neue", arial; font-size: 14px; color: rgb(103, 120, 134); position: absolute; top: 0px; left: 0px;'] {
+    background: #D4D4D4 !important;
+    color: #777777 !important;
+  }
+
+  .tooltip-inner {
+    color: #171717 !important;
+  }
+
+  hr {
+    border-color: #1D1D1D !important;
+  }
+
+  .ThreadedConversation-showMoreThreads {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .ThreadedConversation--header {
+    background-color: #292929 !important;
+  }
+
+  :not(.open) > .plain-btn:not(:hover):not(:focus):not(.u-textUserColor) {
+    color: #979797 !important;
+  }
+
+  html.night_mode .errorpage-global-nav-inner {
+    background-color: #363636 !important;
+  }
+  .errorpage-nav > li {
+    color: #727272 !important;
+  }
+  .errorpage-bird {
+    filter: grayscale(1) !important;
+  }
+  .errorpage-footer li, .errorpage-footer a {
+    color: #ECECEC !important;
+  }
+  .errorpage-body-content p, .errorpage-body-content label {
+    color: #EBEBEB !important;
+  }
+
+  .dismiss-module .feedback-action {
+    color: #979797 !important;
+  }
+  .dismiss-module .undo-action, .dismiss-module .undo-child-feedback-action {
+    color: #979797 !important;
+  }
+  .dismiss-module .dismiss-module-item {
+    border-color: #1D1D1D !important;
+  }
+  .stream-item .dismiss-module {
+    border-color: #1D1D1D !important;
+  }
+  .stream-item.dismissed {
+    border-bottom-color: #1D1D1D !important;
+  }
+  .dismiss-module .child-feedback-confirmation {
+    color: #979797 !important;
+  }
+
+  .block-dialog .submit-section, .phone-deletion-dialog .submit-section {
+    background-color: #242424 !important;
+  }
+  .block-dialog .block-user-description, .phone-deletion-dialog .phone-deletion-description {
+    color: #979797 !important;
+  }
+  .block-dialog .block-section {
+    border-color: #1D1D1D !important;
+  }
+
+  .media-tagging-block {
+    color: #969696 !important;
+  }
+
+  .recap-header {
+    border-color: #000 !important;
+  }
+  .stream-item + .stream-item.separated-module:not(.no-header-background-module), .stream-item.separated-module + .stream-item:not(.no-header-background-module), .PromptbirdPrompt-streamItem.separated-module + .stream-item:not(.no-header-background-module) {
+    border-color: #000 !important;
+  }
+
+  
+
+
+  /* changed luminance */
+  .ProfileCard .pretty-link, .ProfileCard .pretty-link:hover, .ProfileCard .pretty-link:focus, .ProfileCard .pretty-link:active, .ProfileCard .twitter-timeline-link {
+    color: #CCCCCC !important;
+  }
+
+  .DirectMessage--received .DirectMessage-text a, .DirectMessage--received .DirectMessage-text .pretty-link b, .DirectMessage--received .DirectMessage-text .pretty-link s {
+    color: #CCCCCC !important;
+  }
+
+  .block-dialog .block-user-description a, .phone-deletion-dialog .phone-deletion-description a {
+    color: #CCCCCC !important;
+  }
+
+  .MomentDropdownMenu-button:hover, .MomentDropdownMenu.open .MomentDropdownMenu-button {
+    color: #CCCCCC !important;
+  }
+  .MomentsPage.MomentsGuidePage .Footer--blankBackground.Footer:hover .Footer-link, .MomentsPage.MomentsPermalinkPage .Footer--blankBackground.Footer:hover .Footer-link {
+    color: #CCCCCC !important;
+  }
+  .Checkbox:checked,
+  .Checkbox-fake {
+    color: #CCCCCC !important;
+    border-color: #1D1D1D !important;
+  }
+
+  .MomentCapsuleSummaryListDialog-title {
+    color: #979797 !important;
+  }
+  .MomentCapsuleSummaryListDialog .MomentCapsuleSummary {
+    border-color: #1D1D1D !important;
+  }
+
+  .Checkbox:checked,
+  .Checkbox-original:focus+.Checkbox-fake {
+    box-shadow: 0 0 5px #CCCCCC !important;
+  }
+
+
+  html.night_mode {
+    background-color: #1D1D1D !important;
+  }
+  .search-404 .errorpage-btn, .search-404 input[type="text"] {
+    color: #959595 !important;
+  }
+
+  /* fixes */
+  .AdaptiveSearchTimeline .stream .stream-item:first-child {
+    border-top: 1px solid #000 !important;
+  }
+
+
+  .PlayableMedia-reactWrapper > div {
+    font-family: inherit !important;
+  }
+  .PlayableMedia-reactWrapper div[data-testid="controlBar"] span {
+    font-family: inherit !important;
+  }
+  .PlayableMedia-reactWrapper > div > div > span > div {
+    font-family: inherit !important;
+  }
+  .PlayableMedia-reactWrapper span[data-testid="viewCount"] {
+    font-family: inherit !important;
+  }
+  .PlayableMedia-reactWrapper button[data-testid="cta"] {
+    font-family: inherit !important;
+  }
+  div[style*='font-family: "helvetica neue", arial;'] {
+    font-family: inherit !important;
+  }
+
+  #timeline .content-header {
+    border-top: 1px solid #000 !important;
+    border-left: 1px solid #000 !important;
+    border-right: 1px solid #000 !important;
+  }
+
+  .follow-card .follow-bar {
+    border-top: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #000 !important;
+    border-left: 1px solid #000 !important;
+    border-right: 1px solid #000 !important;
+  }
+
+  .stream-item.dismissed {
+    border-bottom-color: #000 !important;
+  }
+
+  :not(.modal-tweet):not(.ProfilePrefilledTweet) > .tweet:hover:not(.modal-tweet) .QuoteTweet:not(:hover),
+  :not(.modal-tweet):not(.ProfilePrefilledTweet) > .tweet:hover:not(.modal-tweet) .PlayableMedia-container
+  {
+    border-color: #000 !important;
+  }
+  
+  .PlayableMedia-reactWrapper > div > div[style='background-color: rgb(204, 215, 221); height: 100%; width: 100%; font-family: "helvetica neue", arial; font-size: 14px; color: rgb(103, 120, 134); position: absolute; top: 0px; left: 0px;'] {
+    background: none !important;
+  }
+  /*
+  .PlayableMedia-reactWrapper div[data-testid="error"] {
+    --error-shadow: 65px;
+    background: rgba(0,0,0,0.65);
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+  .PlayableMedia-reactWrapper div[data-testid="error"]::before, .PlayableMedia-reactWrapper div[data-testid="error"]::after {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    content: '';
+  }
+  .PlayableMedia-reactWrapper div[data-testid="error"]::before {
+    top: calc(-1*var(--error-shadow));
+    height: var(--error-shadow);
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.65));
+  }
+  .PlayableMedia-reactWrapper div[data-testid="error"]::after {
+    top: 100%;
+    height: var(--error-shadow);
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0));
+  }*/
+
+  .PlayableMedia-reactWrapper div[data-testid="error"] {
+    color: rgb(255,255,255) !important;
+    background: rgba(0,0,0,0.5) !important;
+  }
+
+  .Tombstone .Tombstone-action:hover {
+    color: #CCCCCC !important;
+  }
+
+}
+
+@-moz-document regexp("https?://twitter\\.com/i/cards/.*") {
+  body {
+    background-color: transparent !important;
+  }
+
+  .TwitterCard[data-theme="night-mode"] .TwitterCard-container--clickable:hover {
+    border-color: #979797 !important;
+  }
+
+  .TwitterCard .SummaryCard--noImage .SummaryCard-image .tcu-imageWrapper {
+    filter: grayscale(1) !important;
+  }
+
+  .TwitterCard .MomentCard-description p {
+    color: #979797 !important;
+  }
+  .TwitterCard .MomentCard-subtitle {
+    color: #979797 !important;
+  }
+  .TwitterCard .MomentCard-badge {
+    color: #979797 !important;
+  }
+  .TwitterCard .MomentCard-iconLightning {
+    filter: grayscale(1) !important;
+  }
+}
+
+/* share page */
+@-moz-document regexp("https?://twitter\.com/intent/.*") {
+  html {
+    background-color: #1D1D1D !important;
+  }
+  #header {
+    background-color: #363636 !important;
+    border-color: #000000 !important;
+  }
+  body {
+    background-color: #292929 !important;
+  }
+  body.nofooter {
+    border-color: #000000 !important;
+  }
+  .action-information {
+    color: #FFFFFF !important;
+  }
+  .ic-sm-verified, .follow-button b, #header .logo a, .badges .verified, .badges .protected, .tweet-actions i, .retweet-icon {
+    filter: grayscale(1) !important;;
+  }
+  #header .logo a {
+    border-bottom: none !important;
+  }
+  #session a, #session input, #session button {
+    background-color: #363636 !important;
+  }
+  #session h2 img {
+    border-color: #292929 !important;
+  }
+  #session.show h2 a img, #session h2 a:focus img {
+    border-color: #CCCCCC !important;
+  }
+  .js #session .user-menu {
+    background-color: #363636 !important;
+  }
+  .dropdown-caret .caret-inner {
+    border-bottom-color: #363636 !important;
+  }
+  .user-menu .break-before {
+    border-color: #1D1D1D !important;
+  }
+  #session a:not(:hover):not(:focus), #session input:not(:hover):not(:focus), #session button:not(:hover):not(:focus) {
+    color: #979797 !important;
+  }
+  .button.selected, .follow-button .unfollow .button {
+    background-color: #FFFFFF !important;
+    border-color: #979797 !important;
+    color: #000000 !important;
+  }
+  .button.selected:hover, .follow-button:hover .unfollow .button:hover {
+    background-color: #CCCCCC !important;
+  }
+  #update-form textarea {
+    background-color: #1D1D1D !important;
+    color: #FFFFFF !important;
+  }
+  input[type="text"], input[type="password"], textarea {
+    border-color: #1D1D1D !important;
+  }
+  .selected.button:focus, input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+    border-color: #CCCCCC !important;
+    box-shadow: inset 0 0 0 1px rgba(204,204,204,0.7)
+  }
+  input[type="text"], input[type="password"], textarea {
+    border-color: #000000 !important;
+  }
+
+  a:link, a:visited, a:active, input.textual.link, button.textual.link {
+    color: #CCCCCC !important;
+  }
+  h2 {
+    color: #979797 !important;
+  }
+  .user-list .screenname a {
+    color: #979797 !important;
+  }
+  body, select, input, button, textarea {
+    color: #FFFFFF !important;
+  }
+  .user-list .name em {
+    color: #979797 !important;
+  }
+  .footer {
+    background-color: #363636 !important;
+    border-color: #000000 !important;
+  }
+  #btn-close {
+    background-color: #363636 !important;
+  }
+  #btn-close:hover {
+    background-color: #1D1D1D !important;
+  }
+  #auto-close p {
+    color: #979797 !important;
+    background-color: #292929 !important;
+  }
+  .button:hover {
+    background-color: #1D1D1D !important;
+  }
+  .button:focus, .button.focus {
+    background-color: #1D1D1D !important;
+    border-color: #979797 !important;
+  }
+  button:focus {
+    box-shadow: 0 0 0 2px #fff,0 0 2px 4px #CCCCCC !important;
+  }
+
+  /* fixes */
+  .ic-sm-verified {
+    background-position: -13.5px 0px;
+    background-size: 42px 38px;
+    transition: none;
+  }
+}
+
+@-moz-document regexp("https?://twitter\.com/i/tfb/v1/quick_promote/.*") {
+  body {
+    background-color: #292929 !important;
+  }
+  .ep-Header .ep-Title {
+    color: #FFFFFF !important;
+  }
+  .ep-Header {
+    border-color: #000000 !important;
+  }
+  .ep-TweetPerformance.ep-Section .ep-NoEngagements {
+    color: #979797 !important;
+  }
+  .ep-TweetPerformance.ep-Section .ep-EngagementsTable .ep-EngagementsTableHeader {
+    border-color: #000000 !important;
+  }
+  .ep-TweetPerformance.ep-Section .ep-Metric .ep-MetricTopContainer {
+    color: #FFFFFF !important;
+  }
+  .ep-TweetPerformance.ep-Section .ep-EngagementsTable .ep-EngagementsTableHeader {
+    color: #FFFFFF !important;
+  }
+  html, body {
+    color: #FFFFFF !important;
+  }
+  .tooltip-inner {
+    background-color: #FFFFFF;
+    color: #000000 !important;
+  }
+  .tooltip.top .tooltip-arrow {
+    border-top-color: #FFFFFF;
+  }
+  .QuoteTweet .tweet-content {
+    color: #FFFFFF !important;
+  }
+  .ProfileTweet-fullname {
+    color: #FFFFFF !important;
+  }
+  .ProfileTweet-screenname {
+    color: #979797 !important;
+  }
+  a {
+    color: #CCCCCC !important;
+  }
+  .QuoteTweet {
+    border-color: #000000 !important;
+  }
+  .ep-Campaign .ep-CampaignContainer {
+    background-color: #1D1D1D !important;
+  }
+  .ep-Signup .ep-SignupTextContainer .ep-SignupText, .ep-Signup .ep-SignupTextContainer .ep-RefreshText {
+    color: #FFFFFF !important;
+  }
+  .ep-Signup .ep-SignupTextContainer .ep-SignupSubText {
+    color: #979797 !important;
+  }
+  .ep-Signup .ep-SignupButton, .ep-Signup .ep-RefreshButton, .ep-Signup .ep-InlineSignupButton, .ep-Signup .ep-AdsPolicyButton {
+    background-color: #000000 !important;
+    border-color: #979797 !important;
+    color: #FFFFFF !important;
+  }
+  .multi-photo {
+    border: 1px solid rgba(0,0,0,0.1)
+  }
+}
+
+@-moz-document regexp("https?://twitter\.com/about-ads.*") {
+  .container .targetingMessage {
+    color: #FFFFFF !important;
+  }
+  a {
+    color: #B6B6B6 !important;
+  }
+}
