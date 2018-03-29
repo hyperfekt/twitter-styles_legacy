@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Twitter Desaturated
-@version 2.0.0
+@version 2.0.1
 @description Desaturates the Twitter Night Mode, entirely removing the blue tint from the site.
 @author hyperfekt
 @namespace net.hyperfekt
@@ -27,6 +27,9 @@
   }
   .btn.active, .btn:active, .dropdown.open .user-dropdown, .btn.open, .open > .btn {
     background-color: #1D1D1D !important;
+  }
+  .btn {
+    background-color: #242424 !important;
   }
   /* search bar */
   .global-nav .search-input:not(:focus) {
@@ -296,7 +299,7 @@
   }
   /* change favorite icon */
   .HeartAnimation {
-    background-image: url(https://user-images.githubusercontent.com/9434715/38002891-1af186d0-3235-11e8-93fe-2da39b225206.png);
+    background-image: url(https://raw.githubusercontent.com/hyperfekt/twitter-styles/master/web_heart_animation_edge_dark.png);
   }
   .ProfileTweet-action--favorite.is-hoverStateCancelled:hover .ProfileTweet-actionButton, .ProfileTweet-action--favorite.is-hoverStateCancelled:hover .ProfileTweet-actionCount, .ProfileTweet-action--favorite.is-hoverStateCancelled .ProfileTweet-actionButton:focus, .ProfileTweet-action--favorite.is-hoverStateCancelled .ProfileTweet-actionButton:focus .ProfileTweet-actionCount {
     color: #B6B6B6 !important;
