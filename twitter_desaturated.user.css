@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Twitter Desaturated
-@version 2.1.0
+@version 2.2.0
 @description Desaturates the Twitter Night Mode, entirely removing the blue tint from the site.
 @author hyperfekt
 @namespace net.hyperfekt
@@ -195,7 +195,7 @@
       background-color: #1D1D1D !important;
     }
   .EmojiPicker-trigger {
-    color: #B5B5B5 !important;
+    color: #B6B6B6 !important;
   }
   .CountdownCounter.tweet-counter {
     color: #979797 !important;
@@ -205,7 +205,7 @@
   }
   .tweet-form div.rich-editor.is-showPlaceholder::before,
   .tweet-form div.rich-editor:empty::before {
-    color: #B5B5B5 !important;
+    color: #B6B6B6 !important;
   }
   .EdgeButton--secondary,
   .EdgeButton--secondary.disabled,
@@ -226,14 +226,14 @@
     border-top-color: #525252 !important;
   }
   .PollingCardComposer .PollingCardComposer-optionInput.is-showPlaceholder::before {
-    color: #B5B5B5 !important;
+    color: #B6B6B6 !important;
   }
   .PollingCardComposer .PollingCardComposer-customDuration,
   .PollingCardComposer[data-custom-duration="true"] .PollingCardComposer-defaultDuration {
     color: #979797 !important;
   }
   .PollingCardComposer .PollingCardComposer-pollDuration {
-    color: #B5B5B5 !important;
+    color: #B6B6B6 !important;
   }
   .PollingCardComposer .PollingCardComposer-removeOption {
     color: #525252 !important;
@@ -367,7 +367,7 @@
   }
   .QuoteTweet:hover,
   .QuoteTweet:active {
-    border-color: #B5B5B5 !important;
+    border-color: #B6B6B6 !important;
   }
   .ReplyingToContextBelowAuthor {
     color: #979797 !important;
@@ -499,7 +499,7 @@
     color: #979797 !important;
   }
   .DMInboxItem-muted {
-    color: #B5B5B5 !important;
+    color: #B6B6B6 !important;
   }
   .DMPopoverMenu {
     color: #979797 !important;
@@ -819,7 +819,7 @@
     background-color: #525252 !important;
   }
   .MomentSummaryActionsMenu {
-    color: #B5B5B5 !important;
+    color: #B6B6B6 !important;
   }
   .MomentCapsuleSubtitle {
     color: #979797 !important;
@@ -907,7 +907,121 @@
   }
   .Gallery-content {
     background-color: #1D1D1D;
-  }    
+  }
+  
+  /* moment maker */
+  .MomentCapsuleCover-state {
+    color: #979797 !important;
+  }
+  .MomentMakerTopBar-birdIcon.MomentMakerTopBar-birdIcon {
+    color: #fff !important;
+  }
+  .EdgeButton--invertedPrimary:not(:hover):not(:active) {
+    background-color: #292929 !important;
+  }
+  .MomentMakerPage-content {
+    background-color: #292929 !important;
+  }
+  body:not(.swift-loading) .MomentCapsuleEditableMeta .is-showPlaceholder::before {
+    color: #525252 !important;
+  }
+  /* fix */
+  body:not(.swift-loading) .MomentCapsuleEditableMeta .is-showPlaceholder:focus::before {
+    color: transparent !important;
+  }
+  .MomentCapsuleEditableMeta-description .rich-editor {
+    color: #979797 !important;
+  }
+  .MomentCapsuleEditableMeta-description .rich-editor:focus {
+    color: #979797 !important;
+  }
+  .MomentMakerCapsuleCover-empty {
+    background-color: #242424 !important;
+  }
+  .MomentMakerCapsuleCover-empty {
+    color: #B6B6B6 !important;
+  }
+  .MomentMakerCapsuleCover-emptyText {
+    color: #979797 !important;
+  }
+  .MomentMakerActionButtons {
+    color: #B6B6B6 !important;
+  }
+  .MomentMakerMediaInlinePreview + .MomentCapsuleItem .MomentMakerActionButtons-button--up {
+    color: #1D1D1D !important;
+  }
+  .MomentCapsuleItem:first-of-type .MomentMakerActionButtons-button--up, .MomentCapsuleItem:last-of-type .MomentMakerActionButtons-button--down {
+    color: #1D1D1D !important;
+  }
+  .MomentMakerActionButtons-button:hover {
+    color: #979797 !important;
+  }
+  .MomentMakerRecommendations {
+    background-color: #242424 !important;
+  }
+  .MomentMakerRecommendations-module {
+    background-color: #292929 !important;
+    border-color: #525252 !important;
+  }
+  .MomentMakerRecommendedCategories-target:not(.u-textUserColor) {
+    color: #979797 !important;
+  }
+  .MomentMakerRecommendations-more {
+    background-color: #242424 !important;
+    border-color: #525252 !important;
+    color: #979797 !important;  
+  }
+
+  .MomentMakerTopBarDropdownMenu .dropdown-menu .dropdown-link[disabled], .MomentMakerTopBarDropdownMenu .dropdown-menu .dropdown-link[disabled]:hover {
+    background-color: #292929 !important;
+    color: #B6B6B6 !important;
+  }
+  .MomentMakerTopBarDropdownMenu-subtext {
+    color: #B6B6B6 !important;
+  }
+  .MomentMakerRecommendedTweetsSearch-searchIcon {
+    color: #979797 !important;
+  }
+  .MomentCapsuleItemTweet .QuoteTweet {
+    border-color: #525252 !important;
+  }
+  .MomentCapsuleItemTweet .QuoteTweet:active, .MomentCapsuleItemTweet .QuoteTweet:focus, .MomentCapsuleItemTweet .QuoteTweet:hover {
+    border-color: #B6B6B6 !important;
+    background-color: #242424 !important;
+  }
+  .MomentCapsuleItemTweet--withText .QuoteTweet:active, .MomentCapsuleItemTweet--withText .QuoteTweet:focus, .MomentCapsuleItemTweet--withText .QuoteTweet:hover {
+    background-color: rgba(255,255,255,0.4) !important;
+  }
+  .MomentMakerCoverDialog .modal-body {
+    background-color: #242424 !important;
+    color: #979797 !important;
+  }
+  .MomentMakerCoverDialog-cell--upload {
+    background-color: #292929 !important;
+  }
+  /* changed luminance */
+  .MomentMakerCoverDialog-cell--upload, .MomentMakerCoverDialog-cell--image.selected {
+    border-color: #CCCCCC !important;
+  }
+  .MomentMakerCoverDialog-cell {
+    color: #CCCCCC !important;
+  }
+
+  .MomentMakerCoverCropper {
+    background-color: #292929 !important;
+  }
+  .MomentMakerCropOverlay-cropArea .ui-resizable-sw::after, .MomentMakerCropOverlay-cropArea .ui-resizable-se::after, .MomentMakerCropOverlay-cropArea .ui-resizable-nw::after, .MomentMakerCropOverlay-cropArea .ui-resizable-ne::after {
+    background-color: #292929 !important;
+  }
+  .MomentMakerCropOverlay-cropArea .ui-resizable-handle {
+    background-color: #292929 !important;
+  }
+  .MomentMakerMediaActionButtons {
+    color: #B6B6B6 !important;
+  }
+  .MomentMakerCapsuleCover-media.has-media {
+    border-color: #B6B6B6 !important;
+  }
   
   /* other */
 
@@ -980,7 +1094,7 @@
     color: #525252 !important;
   }
   .EmojiPicker-clearQuery:hover {
-    color: #B5B5B5 !important;
+    color: #B6B6B6 !important;
   }
   .EmojiPicker-categoryColumn {
     border-color: #1D1D1D !important;
