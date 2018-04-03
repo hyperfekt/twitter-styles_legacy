@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Twitter Desaturated
-@version 2.2.1a
+@version 2.2.2
 @description Desaturates the Twitter Night Mode, entirely removing the blue tint from the site.
 @author hyperfekt
 @namespace net.hyperfekt
@@ -28,14 +28,8 @@
   .btn.active, .btn:active, .dropdown.open .user-dropdown, .btn.open, .open > .btn {
     background-color: #1D1D1D !important;
   }
-  .btn {
+  #user-dropdown-toggle {
     background-color: #242424 !important;
-  }
-  .plain-btn, .plain-btn:hover {
-    background-color: transparent !important;
-  }
-  .plain-btn:focus, .plain-btn.focus, .plain-btn.active, .plain-btn:active, .plain-btn.open, .dropdown.open .user-dropdown.plain-btn, .open > .plain-btn {
-    background-color: transparent !important;
   }
   /* search bar */
   .global-nav .search-input:not(:focus) {
