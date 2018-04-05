@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Twitter Desaturated
-@version 2.2.3
+@version 2.2.4
 @description Desaturates the Twitter Night Mode, entirely removing the blue tint from the site.
 @author hyperfekt
 @namespace net.hyperfekt
@@ -178,7 +178,7 @@
   .home-tweet-box,
   .LiveVideo-tweetBox,
   .RetweetDialog-commentBox {
-    background-color: #333333 !important;
+    background-color: #292929 !important;
   }
   .new-tweets-bar {
     background-color: #242424 !important;
@@ -448,7 +448,7 @@
   
   /* reduce theme color */
   .u-bgUserColorLightest {
-    background-color: #333333 !important;
+    background-color: #292929 !important;
   }
   .DMComposer-attachment {
     border-color: #525252 !important;
@@ -491,7 +491,7 @@
     color: #979797 !important;
   }
   .DMInboxItem.is-unread {
-    background-color: #424242 !important;
+    background-color: #444444 !important;
   }
   .DMInbox-secondaryInboxCopy {
     background-color: #292929 !important;
@@ -1353,7 +1353,7 @@
   }
   .TwitterCard .EdgeButton--secondary:focus {
     color: #878787 !important;
-    box-shadow: 0 0 0 2px #fff,0 0 0 4px #B7B7B7 !important;
+    box-shadow: 0 0 0 2px #fff,0 0 0 4px #B6B6B6 !important;
   }
   .TwitterCard .PollXChoice-footer {
     color: #979797 !important;
@@ -1434,7 +1434,7 @@
     background-color: #292929 !important;
   }
   .ThreadedConversation-unavailableText {
-    color: #B7B7B7 !important;
+    color: #B6B6B6 !important;
   }
 
   :not(.open) > .plain-btn:not(:hover):not(:focus):not(.u-textUserColor) {
@@ -1487,7 +1487,7 @@
   }
 
   .media-tagging-block {
-    color: #969696 !important;
+    color: #979797 !important;
   }
 
   .recap-header {
@@ -1542,7 +1542,7 @@
     background-color: #1D1D1D !important;
   }
   .search-404 .errorpage-btn, .search-404 input[type="text"] {
-    color: #959595 !important;
+    color: #979797 !important;
   }
 
   /* fixes */
@@ -1597,28 +1597,6 @@
   .PlayableMedia-reactWrapper > div > div[style='background-color: rgb(204, 215, 221); height: 100%; width: 100%; font-family: "helvetica neue", arial; font-size: 14px; color: rgb(103, 120, 134); position: absolute; top: 0px; left: 0px;'] {
     background: none !important;
   }
-  /*
-  .PlayableMedia-reactWrapper div[data-testid="error"] {
-    --error-shadow: 65px;
-    background: rgba(0,0,0,0.65);
-    color: rgba(255, 255, 255, 0.85) !important;
-  }
-  .PlayableMedia-reactWrapper div[data-testid="error"]::before, .PlayableMedia-reactWrapper div[data-testid="error"]::after {
-    position: absolute;
-    width: 100%;
-    left: 0%;
-    content: '';
-  }
-  .PlayableMedia-reactWrapper div[data-testid="error"]::before {
-    top: calc(-1*var(--error-shadow));
-    height: var(--error-shadow);
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.65));
-  }
-  .PlayableMedia-reactWrapper div[data-testid="error"]::after {
-    top: 100%;
-    height: var(--error-shadow);
-    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0));
-  }*/
 
   .PlayableMedia-reactWrapper div[data-testid="error"] {
     color: rgb(255,255,255) !important;
