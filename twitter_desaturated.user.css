@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Twitter Desaturated
-@version 2.2.6
+@version 2.2.7
 @description Desaturates the Twitter Night Mode, entirely removing the blue tint from the site.
 @author hyperfekt
 @namespace net.hyperfekt
@@ -295,6 +295,9 @@
   }
   .tweet:not(.Tweet--invertedColors) .ProfileTweet-action.ProfileTweet-action--dm .ProfileTweet-actionButton:not(:hover):not(:focus),
   .tweet:not(.Tweet--invertedColors) .ProfileTweet-action.ProfileTweet-action--analytics .ProfileTweet-actionButton:not(:hover):not(:focus) {
+    color: #979797 !important;
+  }
+  .tweet-poi-geo-text, .tweet-poi-geo-text a {
     color: #979797 !important;
   }
   /* change favorite icon */
