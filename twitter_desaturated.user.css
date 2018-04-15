@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Twitter Desaturated
-@version 2.2.9
+@version 2.2.10
 @description Desaturates the Twitter Night Mode, entirely removing the blue tint from the site.
 @author hyperfekt
 @namespace net.hyperfekt
@@ -1329,6 +1329,12 @@
   }
   .MutedKeyword-item {
     border-color: #1D1D1D !important;
+  }
+  body:not(.swift-loading) .MutedKeywordsAddItemForm .is-showPlaceholder::before {
+    color: #B6B6B6 !important;
+  }
+  .MutedKeywordsAddItemForm .MutedKeywordsAddItemForm-info {
+    color: #B6B6B6 !important;
   }
   .input-prepend .add-on, .input-append .add-on {
     background-color: #242424 !important;
