@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Twitter Desaturated
-@version 2.2.10
+@version 2.2.11
 @description Desaturates the Twitter Night Mode, entirely removing the blue tint from the site.
 @author hyperfekt
 @namespace net.hyperfekt
@@ -175,10 +175,8 @@
     filter: grayscale(1) !important;
   }
   /* the tweet box mixes in the theme color over the background blue, but since we don't have access to the theme color by itself, we'll desaturate it as well */
-  .home-tweet-box,
-  .LiveVideo-tweetBox,
-  .RetweetDialog-commentBox {
-    background-color: #292929 !important;
+  .home-tweet-box, .LiveVideo-tweetBox, .RetweetDialog-commentBox {
+    background-color: #242424 !important;
   }
   .new-tweets-bar {
     background-color: #242424 !important;
@@ -1037,6 +1035,29 @@
     border-color: #B6B6B6 !important;
   }
   
+  /* live video */
+  .LiveVideoHomePageModule-host {
+    color: #979797 !important;
+  }
+  .LiveEventPage-mediaContainer.LiveEventPage-mediaContainer--breakpoint {
+    background-color: #1D1D1D !important;
+  }
+  .LiveBroadcastDetails {
+    background-color: #292929 !important;
+  }
+  .LiveEventOfficialAccount-title {
+    border-color: #1D1D1D !important;
+  }
+  .LiveEventOfficialAccount {
+    background-color: #292929 !important;
+  }
+  .LiveEventPage .LiveEvent-tweetBox {
+    border-color: #000 !important;
+  }
+  .tweet-user {
+    background-color: #242424 !important;
+  }
+
   /* other */
 
   .message {
