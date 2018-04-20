@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Twitter Desaturated
-@version 2.2.12
+@version 2.2.13
 @description Desaturates the Twitter Night Mode, entirely removing the blue tint from the site.
 @author hyperfekt
 @namespace net.hyperfekt
@@ -69,6 +69,16 @@
   :not(.open) > .SearchExtrasDropdown-toggle:not(:hover):not(:focus) {
     color: #979797 !important;
   }
+  .AdaptiveNewsTextHeadline-body {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .AdaptiveNewsTextHeadline-description {
+    color: #979797 !important;
+  }
+  .AdaptiveNewsTextHeadline-description:focus, .AdaptiveNewsTextHeadline-description:hover {
+    color: #979797 !important;
+  }
   .AdaptiveNewsLargeImageHeadline-description {
     color: #979797 !important;
   }
@@ -81,6 +91,16 @@
   .AdaptiveNewsLargeImageHeadline-body {
     background-color: #292929 !important;
     border-color: #1D1D1D !important;
+  }
+  .AdaptiveNewsRelatedHeadlines {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .AdaptiveNewsRelatedHeadlines-description {
+    color: #979797 !important
+  }
+  .AdaptiveNewsRelatedHeadlines-description:focus, .AdaptiveNewsRelatedHeadlines-description:hover {
+    color: #979797 !important;
   }
   .tweet .context a {
     color: #979797 !important;
