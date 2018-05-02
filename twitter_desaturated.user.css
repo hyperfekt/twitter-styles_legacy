@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Twitter Desaturated
-@version 2.2.15
+@version 2.2.16
 @description Desaturates the Twitter Night Mode, entirely removing the blue tint from the site.
 @author hyperfekt
 @namespace net.hyperfekt
@@ -1282,6 +1282,9 @@
   }
   .icon-btn.enabled:hover {
     background-color: #242424 !important;
+  }
+  .datepicker table tr td.disabled, .datepicker table tr td.disabled:hover {
+    color: #979797 !important;
   }
   .datepicker table tr td.old, .datepicker table tr td.new {
     color: #979797 !important;
