@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Twitter Fixed Search
-@version 1.0.0
+@version 1.1.0
 @description Prevents the search results from changing under your cursor just as you click.
 @author hyperfekt
 @namespace net.hyperfekt
@@ -9,6 +9,10 @@
 @updateURL https://raw.githubusercontent.com/hyperfekt/twitter-styles/master/twitter_fixed-search.user.css
 @copyright hyperfekt
 @license Network Extended License (https://github.com/hyperfekt/twitter-styles/blob/master/LICENSE.md)
+@var select border-color "Night Mode" {
+  "Off": "#e6ecf",
+  "On": "#141d26"
+}
 ==/UserStyle== */
 
 @-moz-document regexp("https?://twitter\.com/(?!(intent/|i/tfb/v1/quick_promote/)).*") {
@@ -17,7 +21,7 @@
 		flex-direction: column !important;
 	}
 	#global-nav-search .typeahead .dropdown-inner > .has-results, #global-nav-search .typeahead .dropdown-inner > .has-items {
-		border-top: 1px solid #141d26 !important;
+		border-top: 1px solid /*[[border-color]]*/ !important;
 	}
 	#global-nav-search .typeahead-accounts.typeahead-accounts.typeahead-accounts {
 		order: -1 !important;
