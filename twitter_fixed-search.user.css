@@ -1,0 +1,29 @@
+/* ==UserStyle==
+@name Twitter Fixed Search
+@version 1.0.0
+@description Prevents the search results from changing under your cursor just as you click.
+@author hyperfekt
+@namespace net.hyperfekt
+@homepageURL https://github.com/hyperfekt/twitter-styles/
+@supportURL https://github.com/hyperfekt/twitter-styles/issues/
+@updateURL https://raw.githubusercontent.com/hyperfekt/twitter-styles/master/twitter_fixed-search.user.css
+@copyright hyperfekt
+@license Network Extended License (https://github.com/hyperfekt/twitter-styles/blob/master/LICENSE.md)
+==/UserStyle== */
+
+@-moz-document regexp("https?://twitter\.com/(?!(intent/|i/tfb/v1/quick_promote/)).*") {
+	#global-nav-search .js-typeahead-results {
+		display: flex !important;
+		flex-direction: column !important;
+	}
+	#global-nav-search .typeahead .dropdown-inner > .has-results, #global-nav-search .typeahead .dropdown-inner > .has-items {
+		border-top: 1px solid #141d26 !important;
+	}
+	#global-nav-search .typeahead-accounts.typeahead-accounts.typeahead-accounts {
+		order: -1 !important;
+		border-top: none !important;
+	}
+	#global-nav-search .typeahead-saved-searches.typeahead-saved-searches.typeahead-saved-searches {
+		border-top: none !important;
+	}
+}
