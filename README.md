@@ -13,5 +13,8 @@ You will have to activate the Night Mode for it to work properly.
 This style changes the radius of Twitter's avatars and interface elements, making them square,  
 optionally with corners rounded to your specification.
 
+## [Twitter Fixed Search](https://raw.githubusercontent.com/hyperfekt/twitter-styles/master/twitter_fixed-search.user.css)
+This style prevents the search results from changing under your cursor just before you click.
+Accounts will always appear before keyword suggestions.
 
 The mobile site and Tweetdeck are currently not supported.
