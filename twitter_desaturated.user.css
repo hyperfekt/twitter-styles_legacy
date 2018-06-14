@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Twitter Desaturated
-@version 2.3.5
+@version 2.3.6
 @description Desaturates the Twitter Night Mode, entirely removing the blue tint from the site.
 @author hyperfekt
 @namespace net.hyperfekt
@@ -903,7 +903,7 @@
   .MomentCapsuleCover .MomentCapsuleSubtitle-author + .MomentCapsuleSubtitle-context {
     color: #979797 !important;
   }
-  :not(.open) > .MomentDropdownMenu-button:not(:hover):not(:focus) {
+  :not(.open) > .MomentDropdownMenu-button:not(:hover) {
     color: #979797 !important;
   }
   .MomentCapsuleCoverAttribution, .MomentCapsuleCoverAttribution:active, .MomentCapsuleCoverAttribution:focus, .MomentCapsuleCoverAttribution:hover {
