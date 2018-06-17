@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Twitter Desaturated
-@version 3.1.0
+@version 3.1.1
 @description Desaturates the Twitter Night Mode, entirely removing the blue tint from the site.
 @author hyperfekt
 @namespace net.hyperfekt
@@ -585,6 +585,7 @@
     border-color: #1D1D1D !important;
   }
   .DMCtaView {
+    color: #CCCCCC !important;
     background-color: #292929 !important;
     border-color: #1D1D1D !important;
   }
@@ -1479,12 +1480,11 @@
   
   /* polls */
   .TwitterCard .EdgeButton--secondary {
-    color: #878787 !important;
-    border-color: #878787 !important;
+    color: #CCCCCC !important;
+    border-color: #CCCCCC !important;
   }
   .TwitterCard .EdgeButton--secondary:focus {
-    color: #878787 !important;
-    box-shadow: 0 0 0 2px #fff,0 0 0 4px #B6B6B6 !important;
+    box-shadow: 0 0 0 2px #fff,0 0 0 4px #CCCCCC !important;
   }
   .TwitterCard .PollXChoice-footer {
     color: #979797 !important;
