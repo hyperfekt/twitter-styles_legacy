@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Twitter Desaturated
-@version 2.4.1
+@version 3.0.0
 @description Desaturates the Twitter Night Mode, entirely removing the blue tint from the site.
 @author hyperfekt
 @namespace net.hyperfekt
@@ -1735,6 +1735,103 @@
     color: #CCCCCC !important;
   }
 
+  /* day mode */
+  body {
+    color: #FFFFFF !important;
+  }
+  .ProfileHeading-toggleItem.is-active, .ProfileHeading-toggleItem.is-active:hover, .ProfileHeading-toggleItem.is-active:focus {
+    color: #FFFFFF !important;
+  }
+  .ProfileHeaderCard-bio {
+    color: #FFFFFF !important;
+  }
+  .fullname {
+    color: #FFFFFF !important;
+  }
+  .ProfileHeading-content {
+    border-color: #000000 !important;
+  }
+  .stream-item:not(.no-header-background-module) {
+    border-left-color: #000000 !important;
+    border-right-color: #000000 !important;
+  }
+  .tweet {
+    border-bottom-color: #000000 !important;
+  }
+  .tooltip-inner {
+    background-color: #FFFFFF !important;
+  }
+  .tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #FFFFFF !important;
+  }
+  .module .flex-module {
+    border-color: #000000 !important;
+  }
+  .Trends {
+    border-color: #000000 !important;
+  }
+  .ProfileSidebar .flex-module-header h3 {
+    color: #FFFFFF !important;
+  }
+  .QuoteTweet-fullname {
+    color: #FFFFFF !important;
+  }
+  .QuoteTweet .tweet-content, .QuoteTweet-text a, .QuoteTweet-text a:hover, .QuoteTweet-text a:focus, .QuoteTweet-text a:active, .QuoteTweet-text .pretty-link b, .QuoteTweet-text .pretty-link s, .QuoteTweet-text .pretty-link:hover b, .QuoteTweet-text .pretty-link:hover s, .QuoteTweet-text .pretty-link:focus b, .QuoteTweet-text .pretty-link:focus s, .QuoteTweet-text .pretty-link:active b, .QuoteTweet-text .pretty-link:active s {
+    color: #FFFFFF !important;
+  }
+  .stream-end, .stream-loading, .stream-placeholder, .content-placeholder, .back-to-top, .btn-link.back-to-top {
+    color: #FFFFFF !important;
+  }
+  .stream-end-item, .stream-end, .stream-loading, .stream-placeholder {
+    border-color: #000000 !important;
+  }
+  .modal-header .modal-title {
+    color: #FFFFFF !important;
+  }
+  .modal-header {
+    border-bottom: #000000 !important;
+  }
+  .flex-module-header h3 {
+    color: #FFFFFF !important;
+  }
+  .tweet .stats {
+    border-bottom: 1px solid #000000 !important;
+    border-top: 1px solid #000000 !important;
+  }
+  .stats .stat-count strong {
+    color: #FFFFFF !important;
+  }
+  .permalink .stats .avatar-row a:first-child {
+    border-left-color: #000000 !important;
+  }
+  input:focus, textarea:focus, div[contenteditable="true"]:focus, div[contenteditable="true"].fake-focus, div[contenteditable="plaintext-only"]:focus, div[contenteditable="plaintext-only"].fake-focus {
+    color: #FFFFFF !important;
+  }
+  input,textarea,div[contenteditable],.t1-select {
+    border-color: #000000;
+  }
+  .LoginForm label, .LoginForm .separator {
+    color: #767676 !important;
+  }
+  .caret {
+    border-top-color: #727272 !important;
+  }
+  .nav .open.dropdown .caret, .nav .dropdown-toggle:hover .caret, .nav .dropdown-toggle:focus .caret {
+    border-top-color: #727272 !important;
+  }
+  .new-tweets-bar {
+    border-color: #000000 !important;
+  }
+  .SignupCallOut {
+    background-color: #292929 !important;
+    border-color: #1D1D1D !important;
+  }
+  .SignupCallOut-subheader {
+    color: #979797 !important;
+  }
+  .SignupDialog .SignupDialog-footer {
+    color: #979797 !important;
+  }
 }
 
 @-moz-document regexp("https?://twitter\\.com/i/cards/.*") {
