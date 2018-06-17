@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Twitter Desaturated
-@version 3.1.1
+@version 3.2.0
 @description Desaturates the Twitter Night Mode, entirely removing the blue tint from the site.
 @author hyperfekt
 @namespace net.hyperfekt
@@ -299,6 +299,45 @@
   .user-select-controls {
     border-color: #1D1D1D !important;
     background-color: #1D1D1D !important; /* altered from whatever the hell weird thing the default was */
+  }
+  /* video trimming */
+  .VideoTrim-selection, .VideoTrim-hideTicks {
+    background-color: #292929 !important;
+  }
+  .VideoTrim-ticks > div {
+    color: #979797 !important;
+  }
+  .VideoTrim-leftHandle, .VideoTrim-rightHandle {
+    background-color: #CCCCCC !important;
+  }
+  .VideoTrim-leftHandle::before, .VideoTrim-rightHandle::before {
+    background-color: #606060 !important;
+    box-shadow: 5px 0 0 #606060 !important;
+  }
+  .VideoTrim-midHandleInner {
+    background-color: #CCCCCC !important;
+  }
+  .VideoTrim-midHandleGrip::before {
+    background-color: #606060 !important;
+    box-shadow: -8px -8px #606060,0 -8px #606060,8px -8px #606060,-8px 0 #606060,8px 0 #606060,-8px 8px #606060,0 8px #606060,8px 8px #606060
+  }
+  .VideoTrim-controls {
+    color: #B6B6B6 !important;
+  }
+  .VideoTrim-unplayedScrubber {
+    background-color: #878787 !important;
+  }
+  .VideoTrim-scrubber {
+    background-color: #F4F4F4 !important;
+  }
+  .VideoTrim-timeBubble {
+    background-color: #878787 !important;
+  }
+  .VideoTrim-timeBubble[data-mode="mid"]::before {
+    border-top-color: #878787 !important;
+  }
+  .VideoTrim-timeBubble[data-mode="left"]::before {
+    border-left-color: #878787 !important;
   }
 
   .DashboardProfileCard-avatarLink {
