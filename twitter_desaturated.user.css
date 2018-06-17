@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Twitter Desaturated
-@version 2.3.7
+@version 2.4.0
 @description Desaturates the Twitter Night Mode, entirely removing the blue tint from the site.
 @author hyperfekt
 @namespace net.hyperfekt
@@ -1380,6 +1380,24 @@
   }
   .find-friends-list li:hover {
     background-color: #1D1D1D !important;
+  }
+  .ContactsDashboard .contacts-toggle {
+    border-color: #1D1D1D !important;
+  }
+  .ContactsDashboard td, .ContactsDashboard th {
+    border-color: #1D1D1D !important;
+  }
+  .ContactsDashboard .contacts-column-name-row {
+    color: #979797 !important;
+  }
+  .ContactsDashboard .no-name {
+    color: #B6B6B6 !important;
+  }
+  .ContactsDashboard .contacts-info, .ContactsDashboard .contacts-field-category {
+    color: #B6B6B6 !important;
+  }
+  .ContactsDashboard .contacts-status {
+    color: #979797 !important;
   }
   .MutedKeywordsFooter {
     background-color: #292929 !important;
