@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Twitter Desaturated
-@version 3.0.1
+@version 3.0.2
 @description Desaturates the Twitter Night Mode, entirely removing the blue tint from the site.
 @author hyperfekt
 @namespace net.hyperfekt
@@ -581,6 +581,10 @@
   .TypingIndicatorMessageBubble-dot::after {
     background-color: #B6B6B6 !important;
   }
+  .DMConversation-newMessagesPill {
+    background-color: #292929 !important;
+  }
+
   /* changed luminance */
   @keyframes TypingIndicatorMessageBubble-blink {
     0%   {
