@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Twitter Desaturated
-@version 3.2.3
+@version 3.2.4
 @description Desaturates the Twitter Night Mode, entirely removing the blue tint from the site.
 @author hyperfekt
 @namespace net.hyperfekt
@@ -1862,7 +1862,7 @@
     color: #FFFFFF !important;
   }
   .modal-header {
-    border-bottom: #000000 !important;
+    border-bottom-color: #000000 !important;
   }
   .flex-module-header h3 {
     color: #FFFFFF !important;
