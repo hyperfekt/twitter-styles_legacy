@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Twitter Desaturated
-@version 3.2.1
+@version 3.2.2
 @description Desaturates the Twitter Night Mode, entirely removing the blue tint from the site.
 @author hyperfekt
 @namespace net.hyperfekt
@@ -485,6 +485,17 @@
   .DirectMessage-footer {
     color: #979797 !important;
   }
+  @keyframes DMReadReceipt-checkSeen {
+    0% {
+     color:#979797;
+    }
+    50% {
+     color:#FFFFFF;
+    }
+    100% {
+     color:#CCCCCC;
+    }
+   }
   .DirectMessage--received .DirectMessage-text {
     background-color: #1D1D1D !important;
   }
@@ -540,7 +551,7 @@
     border-color: #878787 !important;
   }
   .DMReadReceipt-check.is-seen {
-    color: #878787 !important;
+    color: #CCCCCC !important;
   }
   .DMActivity-header {
     color: #979797 !important;
