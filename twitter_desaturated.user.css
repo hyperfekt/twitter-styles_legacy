@@ -640,7 +640,7 @@
     border-color: #1D1D1D !important;
   }
   .DMCtaView:hover {
-    background-color: #242424 !important; //fix over original
+    background-color: #242424 !important; /* fix over original */
   }
   .DMConversation-newMessagesPill {
     background-color: #292929 !important;
