@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Twitter Square
-@version 2.2.1
+@version 2.3.0
 @description Changes the radius of Twitter's avatars and interface elements, making them square with customizably rounded corners.
 @author hyperfekt
 @namespace net.hyperfekt
@@ -108,7 +108,13 @@
     .QuoteTweet--sensitive,
     .DMConversation-newMessagesPill,
     .VideoTrim-timeBubble,
-    .trend-location-picker-item
+    .trend-location-picker-item,
+    .scrubBar,
+    .playedBar,
+    .scrubHandle,
+    .volume-slider,
+    .volume-track,
+    .volume-thumb
     {
         border-radius: var(--interface-radius, 0px) !important;
     }
