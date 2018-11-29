@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name Twitter Desaturated
-@version 3.3.2
+@version 3.4.0
 @description Desaturates the Twitter Night Mode, entirely removing the blue tint from the site.
 @author hyperfekt
 @namespace net.hyperfekt
@@ -179,6 +179,7 @@
     .Trends,
   .DashboardProfileCard {
     background-color: #292929 !important;
+    border-color: #000000 !important;
   }
   .module:not(.Footer--blankBackground) .flex-module {
     background-color: #292929 !important;
@@ -219,6 +220,9 @@
     div[contenteditable],
     .t1-select {
       background-color: #1D1D1D !important;
+    }
+    .top-timeline-tweetbox .timeline-tweet-box {
+      border-color: #000000 !important;
     }
   .EmojiPicker-trigger {
     color: #B6B6B6 !important;
@@ -425,13 +429,14 @@
     background-color: #292929 !important;
   }
   .permalink .inline-reply-tweetbox {
+    border-color: #000000 !important;
     background-color: #242424 !important;
   }
   .self-thread-permalink-cta {
     background-color: #292929 !important;
   }
   .QuoteTweet {
-    border-color: #1D1D1D !important;
+    border-color: #000000 !important;
   }
   .QuoteTweet:hover,
   .QuoteTweet:active {
@@ -1642,6 +1647,7 @@
   }
   .ThreadedConversation--header {
     background-color: #292929 !important;
+    border-color: #1D1D1D !important;
   }
   .ThreadedConversation-unavailableText {
     color: #B6B6B6 !important;
@@ -1923,6 +1929,10 @@
 @-moz-document regexp("https?://twitter\\.com/i/cards/.*") {
   body {
     background-color: transparent !important;
+  }
+
+  .TwitterCard[data-theme="night-mode"] .TwitterCard-container {
+    border-color: #000000 !important;
   }
 
   .TwitterCard[data-theme="night-mode"] .TwitterCard-container--clickable:hover {
